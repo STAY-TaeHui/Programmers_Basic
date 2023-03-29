@@ -9,10 +9,10 @@ public class Main {
 class Solution {
     public int[] solution(int n) {
 
-        IntStream.range(1, n)
-                .filter(value -> value % 2 != 0)
-                .collect();
+        int[] ints = IntStream.rangeClosed(1, n)
+            .filter(value -> value % 2 != 0)
+            .toArray();
 
-        return answer;
+        return ints;
     }
 }
