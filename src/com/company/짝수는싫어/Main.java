@@ -1,6 +1,7 @@
 package com.company.짝수는싫어;
 //https://school.programmers.co.kr/learn/courses/30/lessons/120831
 
+import java.util.Arrays;
 import java.util.stream.IntStream;
 
 public class Main {
