@@ -7,12 +7,13 @@ public class Main {
 class Solution {
     public int[] solution(int numer1, int denom1, int numer2, int denom2) {
         int[] answer = new int[2];
-        int gcdResult = 0;
 
-        gcdResult = gcd(denom1,denom2);
+        int numer = (numer1*denom2)+(numer2*denom1);
+        int denom = denom1*denom2;
+        int gcdResult = gcd(numer,denom);
 
-        answer[0] = ((numer1*denom2)+(numer2*denom1)) / gcdResult;
-        answer[1] = (denom1*denom2) / gcdResult;
+        answer[0] = numer / gcdResult;
+        answer[1] = denom / gcdResult;
         return answer;
     }
     public int gcd(int a, int b){
