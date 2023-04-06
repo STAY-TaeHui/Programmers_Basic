@@ -12,7 +12,7 @@ public class Main {
 
 class Solution {
     public static int solution(String my_string) {
-        int sum = Arrays.stream(my_string.split("[^0-9]+"))
+        int sum = Arrays.stream(my_string.split(""))
             .filter(s -> !s.isEmpty() && s.matches("[0-9]"))
             .mapToInt(Integer::parseInt)
             .sum();

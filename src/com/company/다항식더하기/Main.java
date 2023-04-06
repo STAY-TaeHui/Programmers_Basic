@@ -16,6 +16,7 @@ class Solution {
         int xCount = 0;
         int numCount = 0;
 
+
         for(String p : polynomial.split(" ")){
             if(!p.equals("+")){
                 if(p.contains("x")){
