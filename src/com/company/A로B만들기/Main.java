@@ -20,6 +20,8 @@ class Solution {
                 return 0;
             }
         }
+//        return Arrays.equals(bfArray, afArray) ? 1:0;
+
         return 1;
     }
 }//        return new String(a).equals(new String(b)) ? 1 :0;
